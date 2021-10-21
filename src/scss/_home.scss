@@ -1,0 +1,118 @@
+.home {
+  .info-section {
+    width: 35%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 54px;
+
+    .logo {
+      border: 2px solid #fff;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 40px;
+      color: white;
+    }
+
+    .info-box {
+      bottom: 60px;
+      position: absolute;
+
+      h4 {
+        font-size: 1.2rem;
+        color: $color3;
+        margin: 0.7rem 0;
+      }
+
+      .phone {
+        margin: 0 0 0.7rem 0;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $color3;
+        margin: 0.2rem 0 1.6rem;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        //font-size: 2rem;;
+      }
+    }
+    .icon-section {
+      a {
+        font-size: 1.5rem !important;
+        padding: 0px 10px 0px 0px !important;
+        &:hover {
+          color: $hoveredColor1;
+        }
+      }
+    }
+  }
+
+  .content-area {
+    margin-left: 35%;
+    width: 65%;
+    background: white;
+    height: 100%;
+    //padding: 0 0 0 25%;
+
+    .image-container {
+      display: inline-block;
+      width: 25%;
+      position: relative;
+      height: 100%;
+
+      .user-image {
+        position: absolute;
+        top: 56px;
+        left: -200px;
+        width: 400px;
+        height: calc(100% - 120px);
+        background: url(https://cdn5.vectorstock.com/i/1000x1000/61/94/web-developer-programmer-flat-vector-25036194.jpg)
+          no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-box-shadow: 6px 16px 24px 5px rgba(15, 47, 171, 0.56);
+        -moz-box-shadow: 6px 16px 24px 5px rgba(15, 47, 171, 0.56);
+        box-shadow: 6px 16px 24px 5px rgba(15, 47, 171, 0.56);
+      }
+    }
+  }
+
+  .profile-section {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 500px;
+    padding: 20% 0 0;
+    .profile {
+      h1 {
+        font-size: 2.3rem;
+        font-weight: 500;
+        line-height: 1.3;
+        margin: 0 0 1rem;
+        span {
+          color: $color1;
+        }
+      }
+      h5 {
+        font-size: 1.1rem;
+        margin: 0 0 2rem;
+      }
+      p {
+        color: $color5;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 0 0 2rem;
+      }
+    }
+  }
+}

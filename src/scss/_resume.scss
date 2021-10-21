@@ -1,0 +1,57 @@
+.resume {
+  .info-section {
+    width: 20%;
+  }
+
+  .content-area {
+    background: $color3;
+    margin-left: 20%;
+    width: 80%;
+    min-width: 300px;
+    background: white;
+    height: 100%;
+    //padding: 56px;
+    overflow: hidden;
+
+    .category {
+      margin-bottom: 56px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 56px;
+      }
+
+      .xp-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 56px;
+        row-gap: 30px;
+        max-width: 1000px;
+
+        .xp-box {
+          padding: 30px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            -webkit-box-shadow: 11px 14px 38px 5px rgba(216, 218, 232, 1);
+            -moz-box-shadow: 11px 14px 38px 5px rgba(216, 218, 232, 1);
+            box-shadow: 11px 14px 38px 5px rgba(216, 218, 232, 1);
+          }
+          cursor: pointer;
+          h5 {
+            font-weight: 500;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            font-weight: 300;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -57,6 +57,7 @@
   }
 
   .content-area {
+    background: $color3;
     margin-left: 35%;
     width: 65%;
     background: white;
@@ -70,6 +71,8 @@
       height: 100%;
 
       .form-section {
+        overflow-y: scroll;
+        overflow-x: hidden;
         position: absolute;
         top: 56px;
         left: -200px;
@@ -82,7 +85,7 @@
         -moz-box-shadow: 6px 16px 24px 5px rgba(15, 47, 171, 0.56);
         box-shadow: 6px 16px 24px 5px rgba(15, 47, 171, 0.56);
 
-        h4{
+        h4 {
           font-size: 1.6rem;
           margin-top: 1rem;
           margin-bottom: 2rem;
@@ -115,7 +118,6 @@
           padding: 17px 30px;
           text-transform: uppercase;
           width: 100%;
-          
         }
       }
     }
@@ -124,9 +126,12 @@
   .contact-section {
     vertical-align: top;
     display: inline-block;
-    max-width: 500px;
-    padding: 20% 0 0;
-    .profile {
+    //max-width: 500px;
+    padding: 56px 0 0;
+    width: 70%;
+    //float:  right;
+
+    .contact-info {
       h1 {
         font-size: 2.3rem;
         font-weight: 500;
@@ -136,15 +141,26 @@
           color: $color1;
         }
       }
-      h5 {
-        font-size: 1.1rem;
-        margin: 0 0 2rem;
-      }
-      p {
-        color: $color5;
-        font-weight: 300;
-        line-height: 1.4;
-        margin: 0 0 2rem;
+      .contact-box {
+        padding: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          -webkit-box-shadow: 11px 14px 38px 5px rgba(216, 218, 232, 1);
+          -moz-box-shadow: 11px 14px 38px 5px rgba(216, 218, 232, 1);
+          box-shadow: 11px 14px 38px 5px rgba(216, 218, 232, 1);
+        }
+        cursor: pointer;
+        h5 {
+          font-size: 1.1rem;
+          margin: 0 0 1.5rem;
+          font-weight: 600;
+        }
+        p {
+          color: $color5;
+          font-weight: 300;
+          line-height: 1.4;
+          margin: 0 0 2rem;
+        }
       }
     }
   }

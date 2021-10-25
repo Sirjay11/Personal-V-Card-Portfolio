@@ -116,3 +116,82 @@
     }
   }
 }
+
+//phone
+@media (max-width: 767px) { 
+  .home{
+    .menu-icon{
+      top: -3px;
+      right: 20px;
+      color: white;
+
+      .fa{
+        color: white;
+
+      }
+    }
+
+    .info-section{
+      //display: none;
+      padding: 10px 20px;
+      position: static;
+
+      .logo{
+        height: 50px;
+        width: 70px;
+      }
+
+      .info-box{
+        display: none;
+      }
+
+    }
+    .content-area{
+      margin-left: 0;
+      width: 100%;
+      
+      .image-container{
+        padding: 56px 20px 0;
+
+        .user-image{
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile-section{
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+      }
+    } 
+  }
+}
+//tablet
+@media (min-width: 768px)  { 
+  .home{
+    .content-area{
+      .image-container{
+        padding: 56px 20px 0;
+
+        .user-image{
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile-section{
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+      }
+    } 
+  }
+}
+//laptop
+@media (min-width: 992px) and (max-width: 1199px) { 
+  
+}
+@media (min-width: 1200px) { 
+  
+}

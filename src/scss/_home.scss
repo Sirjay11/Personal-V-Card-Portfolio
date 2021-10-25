@@ -125,20 +125,28 @@
       right: 20px;
       color: white;
 
-      .fa{
+      .fas{
         color: white;
 
       }
     }
 
+    .content-area{
+      overflow: auto;
+      
+    }
     .info-section{
       //display: none;
       padding: 10px 20px;
+      /* left: 0; */
+      /* bottom:0; */
+      /* top: 0; */
       position: static;
-
+      /* width: 35%; */
       .logo{
         height: 50px;
         width: 70px;
+        font-size: 2rem;
       }
 
       .info-box{
@@ -149,7 +157,7 @@
     .content-area{
       margin-left: 0;
       width: 100%;
-      
+
       .image-container{
         padding: 56px 20px 0;
 
@@ -163,12 +171,17 @@
         width: 70%;
         float: right;
         padding: 20% 20px 0;
+        .primary-btn,
+        .ghost-btn{
+          margin-bottom: 20px;
+          margin-right: 15px;
+        }
       }
     } 
   }
 }
 //tablet
-@media (min-width: 768px)  { 
+@media (min-width: 768px) and (max-width: 991px) { 
   .home{
     .content-area{
       .image-container{
@@ -190,8 +203,56 @@
 }
 //laptop
 @media (min-width: 992px) and (max-width: 1199px) { 
-  
+  .home{
+    .content-area{
+      .image-container{
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-image{
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile{
+        .primary-btn,
+        .ghost-btn{
+          margin-bottom: 20px
+        }
+      }
+
+      .profile-section{
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+        max-width: 800px;
+      }
+      
+    } 
+  }
 }
+//extra big device
 @media (min-width: 1200px) { 
-  
+  .home{
+    .content-area{
+      .image-container{
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-image{
+          //displayposition: static;
+          //width: 100%;
+        }
+      }
+
+      .profile-section{
+        width: 70%;
+        float: left;
+        padding: 20% 60px 0;
+        max-width: 800px;
+
+      }
+    } 
+  }
 }

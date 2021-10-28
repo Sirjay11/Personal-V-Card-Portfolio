@@ -460,6 +460,102 @@ body {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 767px) {
+  .resume .menu-icon {
+    top: -3px;
+    right: 20px;
+    color: white;
+  }
+  .resume .menu-icon .fas {
+    color: white;
+  }
+  .resume .content-area {
+    overflow: auto;
+  }
+  .resume .info-section {
+    padding: 10px 20px;
+    /* left: 0; */
+    /* bottom:0; */
+    /* top: 0; */
+    position: static;
+    /* width: 35%; */
+  }
+  .resume .info-section .logo {
+    height: 50px;
+    width: 70px;
+    font-size: 2rem;
+  }
+  .resume .info-section .info-box {
+    display: none;
+  }
+  .resume .content-area {
+    margin-left: 0;
+    width: 100%;
+  }
+  .resume .content-area .image-container {
+    padding: 56px 20px 0;
+  }
+  .resume .content-area .image-container .user-image {
+    position: static;
+    width: 100%;
+  }
+  .resume .content-area .profile-section {
+    width: 70%;
+    float: right;
+    padding: 20% 20px 0;
+  }
+  .resume .content-area .profile-section .primary-btn,
+.resume .content-area .profile-section .ghost-btn {
+    margin-bottom: 20px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .resume .content-area .image-container {
+    padding: 56px 20px 0;
+  }
+  .resume .content-area .image-container .user-image {
+    position: static;
+    width: 100%;
+  }
+  .resume .content-area .profile-section {
+    width: 70%;
+    float: right;
+    padding: 20% 20px 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resume .content-area .image-container {
+    padding: 56px 20px 0;
+    float: left;
+  }
+  .resume .content-area .image-container .user-image {
+    position: static;
+    width: 100%;
+  }
+  .resume .content-area .profile .primary-btn,
+.resume .content-area .profile .ghost-btn {
+    margin-bottom: 20px;
+  }
+  .resume .content-area .profile-section {
+    width: 70%;
+    float: left;
+    padding: 20% 20px 0;
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .resume .content-area .image-container {
+    padding: 56px 20px 0;
+    float: left;
+  }
+  .resume .content-area .profile-section {
+    width: 70%;
+    float: left;
+    padding: 20% 60px 0;
+    max-width: 800px;
+  }
+}
 .work .info-section {
   width: 20%;
 }
@@ -566,7 +662,10 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (max-width: 767px) {
+  .work .project-title {
+    font-size: 1rem;
+  }
   .work .menu-icon {
     top: -3px;
     right: 20px;
@@ -578,25 +677,21 @@ body {
   .work .content-area {
     overflow: auto;
   }
-  .work .content-area:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .work .work-section {
-    padding: 10px 20px;
+  .work .info-section {
+    padding: 10px 10px;
     /* left: 0; */
     /* bottom:0; */
     /* top: 0; */
     position: static;
     /* width: 35%; */
   }
-  .work .work-section .logo {
+  .work .info-section .logo {
     height: 50px;
     width: 70px;
     font-size: 2rem;
+    margin-left: 10px;
   }
-  .work .work-section .info-box {
+  .work .info-section .info-box {
     display: none;
   }
   .work .content-area {
@@ -604,59 +699,60 @@ body {
     width: 100%;
   }
   .work .content-area .image-container {
-    width: 100%;
-    height: auto;
     padding: 56px 20px 0;
   }
-  .work .content-area .image-container .project-section {
+  .work .content-area .image-container .user-image {
     position: static;
     width: 100%;
-    height: auto;
-    overflow: auto;
   }
-  .work .content-area .contact-section {
-    width: 100%;
+  .work .content-area .profile-section {
+    width: 70%;
     float: right;
     padding: 20% 20px 0;
   }
-  .work .content-area .contact-section .primary-btn,
-.work .content-area .contact-section .ghost-btn {
+  .work .content-area .profile-section .primary-btn,
+.work .content-area .profile-section .ghost-btn {
     margin-bottom: 20px;
     margin-right: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .contact .content-area .image-container {
-    padding: 56px 20px 0;
-    width: 100%;
-    height: auto;
+  .work .info-section {
+    padding: 20px;
   }
-  .contact .content-area .image-container .form-section {
+  .work .info-section .logo {
+    padding: 56px;
+  }
+  .work .info-section .info-box {
+    margin: auto;
+  }
+  .work .content-area .image-container {
+    padding: 56px 20px 0;
+  }
+  .work .content-area .image-container .user-image {
     position: static;
     width: 100%;
   }
-  .contact .content-area .contact-section {
+  .work .content-area .profile-section {
     width: 70%;
     float: right;
     padding: 20% 20px 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .contact .content-area .image-container {
+  .work .content-area .image-container {
     padding: 56px 20px 0;
     float: left;
-    height: auto;
-    width: 100%;
   }
-  .contact .content-area .image-container .form-section {
+  .work .content-area .image-container .user-image {
     position: static;
     width: 100%;
   }
-  .contact .content-area .profile .primary-btn,
-.contact .content-area .profile .ghost-btn {
+  .work .content-area .profile .primary-btn,
+.work .content-area .profile .ghost-btn {
     margin-bottom: 20px;
   }
-  .contact .content-area .contact-section {
+  .work .content-area .profile-section {
     width: 70%;
     float: left;
     padding: 20% 20px 0;
@@ -664,11 +760,11 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .contact .content-area .image-container {
+  .work .content-area .image-container {
     padding: 56px 20px 0;
     float: left;
   }
-  .contact .content-area .contact-section {
+  .work .content-area .profile-section {
     width: 70%;
     float: left;
     padding: 20% 60px 0;
